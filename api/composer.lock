@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a9357d3dd5bc8fdea5ec6e9db349fdd",
+    "content-hash": "fa15912993bc4481f1571fbaf51d16bc",
     "packages": [
         {
             "name": "api-platform/core",
@@ -1581,6 +1581,95 @@
                 "source": "https://github.com/doctrine/sql-formatter/tree/1.1.x"
             },
             "time": "2020-07-30T16:57:33+00:00"
+        },
+        {
+            "name": "elao/enum",
+            "version": "v1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Elao/PhpEnums.git",
+                "reference": "69a74a3a0bd69c287b7234544c031d42bbe560a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Elao/PhpEnums/zipball/69a74a3a0bd69c287b7234544c031d42bbe560a7",
+                "reference": "69a74a3a0bd69c287b7234544c031d42bbe560a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "api-platform/core": "^2.5.1",
+                "doctrine/data-fixtures": "^1.2",
+                "doctrine/doctrine-bundle": "^1.12|^2.0",
+                "doctrine/orm": "^2.4",
+                "friendsofphp/php-cs-fixer": "^2.12.0",
+                "nelmio/alice": "^3.0",
+                "phpspec/prophecy": "~1.0",
+                "symfony/browser-kit": "^4.4|^5.1",
+                "symfony/console": "^4.4|^5.1",
+                "symfony/css-selector": "^4.4|^5.1",
+                "symfony/form": "^4.4|^5.1",
+                "symfony/framework-bundle": "^4.4|^5.1",
+                "symfony/phpunit-bridge": "^5.1",
+                "symfony/serializer": "^4.4|^5.1",
+                "symfony/translation": "^4.4|^5.1",
+                "symfony/twig-bundle": "^4.4|^5.1",
+                "symfony/validator": "^4.4|^5.1",
+                "symfony/yaml": "^4.4|^5.1",
+                "twig/twig": "^2.12|^3.0"
+            },
+            "bin": [
+                "bin/elao-enum-dump-js"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Elao\\Enum\\": "src/"
+                },
+                "files": [
+                    "src/Bridge/Symfony/VarDumper/Resources/register_caster.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elao",
+                    "homepage": "https://www.elao.com"
+                },
+                {
+                    "name": "Maxime Steinhausser",
+                    "email": "maxime.steinhausser@gmail.com",
+                    "homepage": "https://github.com/ogizanagi"
+                }
+            ],
+            "description": "Enumerations for PHP and frameworks integrations",
+            "homepage": "https://github.com/Elao/PhpEnums",
+            "keywords": [
+                "doctrine",
+                "enum",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/Elao/PhpEnums/issues",
+                "source": "https://github.com/Elao/PhpEnums/tree/v1.14.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ogizanagi",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-02-19T13:19:14+00:00"
         },
         {
             "name": "fig/link-util",
@@ -7034,6 +7123,72 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
+        },
+        {
+            "name": "webonyx/graphql-php",
+            "version": "v14.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "6b0ba9a4688b2ef74ea4d52b27477dd80fa67f31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6b0ba9a4688b2ef74ea4d52b27477dd80fa67f31",
+                "reference": "6b0ba9a4688b2ef74ea4d52b27477dd80fa67f31",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.1||^8.0"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.3",
+                "doctrine/coding-standard": "^6.0",
+                "nyholm/psr7": "^1.2",
+                "phpbench/phpbench": "^0.16.10",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "0.12.82",
+                "phpstan/phpstan-phpunit": "0.12.18",
+                "phpstan/phpstan-strict-rules": "0.12.9",
+                "phpunit/phpunit": "^7.2|^8.5",
+                "psr/http-message": "^1.0",
+                "react/promise": "2.*",
+                "simpod/php-coveralls-mirror": "^3.0",
+                "squizlabs/php_codesniffer": "3.5.4"
+            },
+            "suggest": {
+                "psr/http-message": "To use standard GraphQL server",
+                "react/promise": "To leverage async resolving on React PHP platform"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/webonyx/graphql-php/issues",
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/webonyx-graphql-php",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-05-17T19:21:04+00:00"
         },
         {
             "name": "willdurand/negotiation",
